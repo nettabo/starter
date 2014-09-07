@@ -1,0 +1,8 @@
+---
+# homeshick
+
+- name: clone dotfiles
+  command: /Users/{{ ansible_user_id }}/.homesick/repos/homeshick/bin/homeshick clone {{ castle_url }} creates=/Users/{{ ansible_user_id }}/.homesick/repos/dotfiles
+
+- name: symlink dotfiles
+  command: /Users/{{ ansible_user_id }}/.homesick/repos/homeshick/bin/homeshick -f link dotfiles creates=/Users/{{ ansible_user_id }}/.vimrc

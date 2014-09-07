@@ -1,0 +1,8 @@
+---
+# NeoBundle
+
+- name: run install.sh
+  shell: curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh creates=/Users/{{ ansible_user_id }}/.vim/bundle
+
+- name: install configured bundles
+  command: /Users/{{ ansible_user_id }}/.vim/bundle/neobundle.vim/bin/neoinstall creates=/Users/{{ ansible_user_id }}/.vim/bundle/vim-getafe

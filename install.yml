@@ -5,8 +5,19 @@
   - role: osxc.packages
     brew_taps:
     - caskroom/fonts
+    - motemen/ghq
+    - peco/peco
     brew_packages:
+    - ghq
     - git
+    - go
+    - peco
+    - tig
+    - wget
     cask_packages:
+    - alfred
+    - atom
+    - dropbox
     - font-sauce-code-powerline
     - iterm2
+    - karabiner
