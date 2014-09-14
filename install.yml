@@ -24,3 +24,11 @@
     - iterm2
     - karabiner
   - role: hnakamur.oh-my-zsh
+  - role: hnakamur.anyenv
+    anyenv_rbenv_version: "2.1.2"
+    anyenv_rbenv_global_gems:
+      - bundler
+    anyenv_ndenv_version: "v0.10"
+    anyenv_ndenv_global_packages:
+      - gulp
+      - yo
