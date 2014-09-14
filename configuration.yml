@@ -3,9 +3,6 @@
 - hosts: all
   roles:
   - role: osxc.repository
-    clone_url: https://github.com/robbyrussell/oh-my-zsh.git
-    dest: /Users/{{ ansible_user_id }}/.oh-my-zsh
-  - role: osxc.repository
     clone_url: https://github.com/larssmit/iterm2-getafe.git
     dest: /Users/{{ ansible_user_id }}/src/github.com/larssmit/iterm2-getafe
   - role: homeshick
