@@ -4,12 +4,7 @@
 - name: clone dotfiles
   command: /Users/{{ ansible_user_id }}/.homesick/repos/homeshick/bin/homeshick clone {{ castle_url }} creates=/Users/{{ ansible_user_id }}/.homesick/repos/dotfiles
 
-- name: check symlink dotfiles
-  command: test -L /Users/{{ ansible_user_id }}/.zshrc
-  register: is_symlink_dotfiles
-  changed_when: is_symlink_dotfiles.rc != 0
-  ignore_errors: True
-
 - name: symlink dotfiles
-  command: /Users/{{ ansible_user_id }}/.homesick/repos/homeshick/bin/homeshick -f link dotfiles
-  when: is_symlink_dotfiles.rc != 0
+  command: /Users/{{ ansible_user_id }}/.homesick/repos/homeshick/bin/homeshick link dotfiles
+  register: homeshick_link_dotfiles
+  changed_when: "'symlink' in homeshick_link_dotfiles.stdout"
