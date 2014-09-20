@@ -8,3 +8,8 @@
   - role: homeshick
     castle_url: git@bitbucket.org:nettabo/dotfiles.git
   - role: neobundle
+  tasks:
+  - name: Install Alcatraz
+    shell: curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+    args:
+      creates: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin"
