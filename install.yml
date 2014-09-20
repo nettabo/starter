@@ -24,6 +24,7 @@
     - font-sauce-code-powerline
     - iterm2
     - karabiner
+    - sizeup
   - role: hnakamur.oh-my-zsh
   - role: hnakamur.anyenv
     anyenv_rbenv_version: "2.1.2"
