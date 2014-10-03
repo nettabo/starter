@@ -26,6 +26,7 @@
     - iterm2
     - karabiner
     - sizeup
+    - unity
   - role: hnakamur.oh-my-zsh
   - role: hnakamur.anyenv
     anyenv_rbenv_version: "2.1.2"
