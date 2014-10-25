@@ -37,5 +37,8 @@
       - bundler
     anyenv_ndenv_version: "v0.10"
     anyenv_ndenv_global_packages:
+      - cordova
       - gulp
+      - ionic
+      - ios-sim
       - yo
