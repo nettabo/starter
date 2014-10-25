@@ -10,7 +10,7 @@
     - motemen/ghq
     - peco/peco
     brew_packages:
-    - cask
+    - brew-cask
     - ghq
     - git
     - go
