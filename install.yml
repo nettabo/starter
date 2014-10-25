@@ -29,6 +29,7 @@
     - iterm2
     - karabiner
     - sizeup
+    - teleport
     - unity
     - xquartz
   - role: hnakamur.oh-my-zsh
