@@ -10,6 +10,7 @@
     - motemen/ghq
     - peco/peco
     brew_packages:
+    - android-platform-tools
     - brew-cask
     - ghq
     - git
